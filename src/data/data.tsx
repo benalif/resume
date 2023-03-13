@@ -9,10 +9,10 @@ import {
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -73,6 +73,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Enthusiastic and responsible <strong>software engineer</strong>, with a get-it-done, on-time and high-quality
+        product spirit. Possessing a strong background in both front-end and back-end development through Technical
+        proficiencies include Programming languages and frameworks: Java/J2EE, Spring, JavaScript, Node.js, React.js,
+        Vue.js, SQL, NoSQL, Jenkins... As well as expertise in DevOps, cloud-based infrastructure management and
+        deployment. My ability to bridge the gap between development and operations has enabled me to deliver innovative
+        solutions that meet business objectives and exceed customer expectations.
+      </p>
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
         at <strong className="text-stone-100">Ooredoo Algeria</strong> helping build a modern, mobile-first, domain
         registrar and site builder.
@@ -81,7 +89,7 @@ export const heroData: Hero = {
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
         plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+      </p> */}
     </>
   ),
   actions: [
@@ -104,16 +112,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Enthusiastic and responsible software engineer, with a get-it-done, on-time and high-quality product spirit. Possessing a strong background in both front-end and back-end development through Technical proficiencies include Programming languages and frameworks: Java/J2EE, Spring, JavaScript, Node.js, React.js, Vue.js, SQL, NoSQL, Jenkins... As well as expertise in DevOps, cloud-based infrastructure management and deployment. My ability to bridge the gap between development and operations has enabled me to deliver innovative solutions that meet business objectives and exceed customer expectations.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Algiers, Algeria', Icon: MapIcon},
+    {label: 'Age', text: '34', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Algerian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Sport, Gaming, Tv', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of usthb', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Ooredoo Algeria, inc.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -268,13 +274,19 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
+    date: 'Juin 2014',
     location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    title: 'Master in Network and distributed systems',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: 'March 2003',
+    date: 'Juin 2013',
+    location: 'Clown college',
+    title: 'Master in Network and distributed systems',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'March 2011',
     location: 'School of Business',
     title: 'What did you study 101',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
@@ -340,23 +352,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'farid.benali89@gmail.com',
+      href: 'mailto:farid.benali89@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Algiers, Algeria',
+      href: 'https://goo.gl/maps/Lri83JDzXuT4ies56',
     },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@tbakerx',
+    //   href: 'https://www.instagram.com/tbakerx/',
+    // },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'benalif',
+      href: 'https://github.com/benalif',
     },
   ],
 };
@@ -365,9 +377,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/benalif'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/11975728/benali-farid'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/farid-benali-6547a5139/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
